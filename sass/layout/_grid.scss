@@ -2,9 +2,15 @@
     max-width: $max-grid-width;
     display: grid;
     margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .grid-1-2 {
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
+}
+
+.grid-1-4 {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 7rem;
 }
