@@ -1,0 +1,10 @@
+.grid-parent {
+    max-width: $max-grid-width;
+    display: grid;
+    margin: 0 auto;
+}
+
+.grid-1-2 {
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
