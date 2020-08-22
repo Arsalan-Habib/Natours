@@ -322,6 +322,10 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform 0.3s; }
+  @media (max-width: 56.25em) {
+    .feature-box {
+      padding: 2rem;
+      min-height: 32rem; } }
   .feature-box__icon {
     font-size: 6rem;
     margin-bottom: 0.5rem;
@@ -330,6 +334,9 @@ body {
     background-clip: none;
     color: transparent;
     background-image: linear-gradient(to right, #7ed56f, #28b485); }
+    @media (max-width: 56.25em) {
+      .feature-box__icon {
+        margin-bottom: 0; } }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.025); }
 
@@ -791,7 +798,9 @@ body {
   @media (max-width: 56.25em) {
     .navigation__button {
       top: 3rem;
-      right: 3rem; } }
+      right: 3rem;
+      height: 5rem;
+      width: 5rem; } }
 
 .navigation__background {
   height: 6rem;
@@ -806,7 +815,9 @@ body {
   @media (max-width: 56.25em) {
     .navigation__background {
       top: 3.5rem;
-      right: 3.5rem; } }
+      right: 3.5rem;
+      height: 4rem;
+      width: 4rem; } }
 
 .navigation__nav {
   height: 100vh;
@@ -862,6 +873,9 @@ body {
   position: relative;
   margin-top: 3.4rem;
   transition: background-color 0.25s; }
+  @media (max-width: 56.25em) {
+    .navigation__icon {
+      margin-top: 2.5rem; } }
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
     width: 3rem;
     height: 2px;
@@ -874,8 +888,14 @@ body {
     transition: all 0.25s; }
   .navigation__icon::before {
     top: -0.8rem; }
+    @media (max-width: 56.25em) {
+      .navigation__icon::before {
+        top: -0.7rem; } }
   .navigation__icon::after {
     top: 0.8rem; }
+    @media (max-width: 56.25em) {
+      .navigation__icon::after {
+        top: 0.7rem; } }
 
 .navigation__button:hover .navigation__icon::before {
   top: -1.1rem; }
