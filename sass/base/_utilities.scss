@@ -4,22 +4,41 @@
 
 .u-mb-lg {
     margin-bottom: 8rem !important;
+
+    @include respond(tab-port) {
+        margin-bottom: 5rem !important;
+    }
 }
 
 .u-mb-md {
     margin-bottom: 4rem !important;
+    @include respond(tab-port) {
+        margin-bottom: 2.75rem !important;
+    }
 }
 
 .u-mb-sm {
     margin-bottom: 1.5rem !important;
+    @include respond(tab-port) {
+        margin-bottom: 1.25rem !important;
+    }
 }
 
 .u-mt-lg {
     margin-top: 8rem !important;
+    @include respond(tab-port) {
+        margin-top: 5rem !important;
+    }
 }
 .u-mt-md {
     margin-top: 4rem !important;
+    @include respond(tab-port) {
+        margin-top: 2.75rem !important;
+    }
 }
 .u-mt-sm {
     margin-top: 1.5rem !important;
+    @include respond(tab-port) {
+        margin-top: 1.25rem !important;
+    }
 }

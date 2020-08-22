@@ -44,3 +44,13 @@
         gap: 5rem;
     }
 }
+
+.grid-footer {
+    @include respond(tab-port) {
+        gap: 5rem;
+        padding: 0 1rem;
+    }
+    @include respond(tab-port) {
+        max-width: 80%;
+    }
+}
