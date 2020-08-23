@@ -475,6 +475,17 @@ body {
   padding-left: 9rem;
   font-size: 1.6rem;
   transform: skewX(-12deg); }
+  @media (max-width: 56.25em) {
+    .story {
+      width: 100%;
+      padding: 4rem;
+      padding-left: 7rem; } }
+  @media (max-width: 34.375em) {
+    .story {
+      width: 100%;
+      padding: 3rem;
+      padding-left: 5rem;
+      transform: skewX(0deg); } }
   .story__shape {
     width: 15rem;
     height: 15rem;
@@ -486,6 +497,11 @@ body {
     transform: translateX(-3rem) skewX(12deg);
     overflow: hidden;
     position: relative; }
+    @media (max-width: 34.375em) {
+      .story__shape {
+        width: 12.5rem;
+        height: 12.5rem;
+        transform: translateX(-3rem) skewX(0); } }
   .story__img {
     height: 100%;
     transition: all 0.5s;
@@ -493,6 +509,9 @@ body {
     backface-visibility: hidden; }
   .story__text {
     transform: skewX(12deg); }
+    @media (max-width: 34.375em) {
+      .story__text {
+        transform: skewX(0); } }
   .story__caption {
     position: absolute;
     top: 50%;
@@ -542,6 +561,9 @@ body {
   border: none;
   border-bottom: 3px solid transparent;
   transition: all 0.3s; }
+  @media (max-width: 56.25em) {
+    .form__input {
+      width: 100%; } }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
@@ -567,6 +589,10 @@ body {
 .form__radio-group {
   width: 45%;
   display: inline-block; }
+  @media (max-width: 56.25em) {
+    .form__radio-group {
+      width: 100%;
+      margin-bottom: 2rem; } }
 
 .form__radio-input {
   display: none; }
@@ -978,14 +1004,17 @@ body {
   padding: 15rem 0; }
   @media (max-width: 56.25em) {
     .section-stories {
-      padding: 10rem 0; } }
+      padding: 10rem; } }
+  @media (max-width: 34.375em) {
+    .section-stories {
+      padding: 5rem; } }
 
 .section-book {
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
   @media (max-width: 56.25em) {
     .section-book {
-      padding: 10rem 0; } }
+      padding: 1rem 3rem; } }
 
 .book {
   width: 95%;
@@ -993,8 +1022,24 @@ body {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.85) 50%, transparent 50%), url(../img/nat-10.jpg);
   background-size: cover;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
-  height: 50rem; }
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25); }
+  @media (max-width: 75em) {
+    .book {
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.85) 65%, transparent 65%), url(../img/nat-10.jpg);
+      background-size: cover;
+      border-radius: 3px; } }
+  @media (max-width: 56.25em) {
+    .book {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.85) 100%), url(../img/nat-10.jpg);
+      background-size: cover;
+      border-radius: 3px; } }
   .book__form {
     width: 50%;
     padding: 6rem; }
+    @media (max-width: 75em) {
+      .book__form {
+        width: 65%; } }
+    @media (max-width: 56.25em) {
+      .book__form {
+        width: 100%;
+        padding: 3rem; } }
