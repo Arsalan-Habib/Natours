@@ -4,7 +4,9 @@
     "description": "a modern website for a tour company.",
     "main": "index.js",
     "scripts": {
-        "compile:sass": "node-sass sass/main.scss css/style.css -w"
+        "watch:sass": "node-sass sass/main.scss css/style.css -w",
+        "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+        "concat:css": "node-sass sass/main.scss css/style.comp.css"
     },
     "repository": {
         "type": "git",
